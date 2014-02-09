@@ -1,3 +1,8 @@
+<!--
+    Name:  Index.php
+    Autor: Carlos Andres Alvarez Diaz
+    Desc:  Index de la pagina web
+-->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
