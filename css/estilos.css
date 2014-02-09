@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contenedor {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: auto;
+    width: 960px;
+    border: 0px solid #F00;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    -moz-transform: scaleX(1.33) scaleY(1.2) translateY(56px)
+            translateX(110px);
+    -webkit-transform: scaleX(1.2) scaleY(1.2) translateY(56px)
+            translateX(110px);
+}
+
+#cabecera {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+}
+
+#cabecera img {
+    height: 100%;
+    width: 100%;
+}
+
+#pie {
+    clear: both;
+    position: absolute;
+    top: 648px;
+    bottom: auto;
+    height: 7%;
+    width: 100%;
+    display: block;
+}
+
+#pie img {
+    height: 100%;
+    width: 100%;
+}
+
+.subcontenedor {
+    position: absolute;
+    top: 138px;
+    height: 507px;
+    width: 100%;
+    border: 0px solid #0F0;
+    z-index: 1;
+}
+
+.seccion1 {
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    border: 0px solid #FF0;
+    z-index: 2;
+}
+
+.seccion2 {
+    position: absolute;
+    right: 2px;
+    height: 100%;
+    width: 34%;
+    border: 0px solid #F0F;
+}
+
+/* menu */
+
+/* Quite el body*/
+#header {
+    position: absolute;
+    top: 68px;
+    width: 100%;
+    margin: 30px 0px;
+    height: 40px;
+    display: block;
+    background: #333;
+}
+
+ul#mainmenu,ul#mainmenu ul {
+    list-style: none;
+    padding: 5px;
+}
+
+ul#mainmenu li {
+    display: block;
+    float: left;
+    bottom: 16px;
+    padding: 5px 20px 15px 20px;
+    position: relative;
+    line-height: 18px;
+}
+
+ul#mainmenu li a {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+ul#mainmenu li a:hover {
+    color: #fff;
+}
+/* sub level Nav */
+ul#mainmenu li ul {
+    background: #E1E1E1;
+    border-bottom: solid 2px #C1C1C1;
+    border-top: solid 2px #D1D1D1;
+    border-left: solid 1px #D1D1D1;
+    border-right: solid 1px #D1D1D1;
+    margin: 12px 0 0 0;
+    padding: 12px 10px 0;
+    width: 130px;
+    position: absolute;
+    z-index: 3;
+}
+
+ul#mainmenu li ul li {
+    border-bottom: 1px solid #C1C1C1;
+    display: block;
+    float: none;
+    height: 14px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+    width: 130px;
+    background: none;
+}
+
+ul#mainmenu li ul li.last {
+    border-bottom: none;
+}
+
+ul#mainmenu li ul li a {
+    color: #313131;
+}
+
+ul#mainmenu li ul li a:hover {
+    color: #000;
+}
+
+ul#mainmenu li ul li:last-child:not (li.arrow){
+    border: 0;
+}
+
+#divmenu {
+    position: absolute;
+    top: 150px;
+    bottom: 0px;
+    height: 10%;
+    width: 100%;
+    border: 1px solid #000;
+}
+/* Usuarios */
+
+/* Login y password*/
+.log {
+    position: absolute;
+    top: 30px;
+    left: 35%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 33%;
+    width: 40%;
+    border: 1px solid #999;
+    border-left: 0px solid #999;
+    border-right: 2px solid #999;
+    background: #ffffcc;
+    box-shadow: rgb(150, 150, 120) 5px 5px 10px;
+    border-radius: 8px 16px;
+    background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+    background: -moz-linear-gradient(top, #FFFFFF, #006699);
+}
+
+.log,#user {
+    position: absolute;
+    left: 24%;
+    bottom: 44%;
+}
+
+.nombreUsuario {
+    position: absolute;
+    background: #3B5999;
+    color: #D8DFEA;
+    top: 0px;
+    right: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: auto;
+    border: 0;
+    z-index: 4;
+}
+
+.efect {
+    color: #fff;
+    background: #4b67A1;
+    font-size: 17px;
+}
+/*Tecnica de color y sombras en las letras*/
+#ing {
+    font: bold 26px verdana, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.7) 3px 3px 10px;
+    color: hsla(360, 100%, 50%, 0.7);
+}
+/* Drag y drop */
+.art {
+    position: absolute;
+    border: 0;
+    left: 35px;
+    height: auto;
+}
+
+.carro img {
+    border: 1px solid #000;
+    height: auto;
+    width: 70px;
+    cursor: move;
+}
+
+#drop {
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    padding-left: 5px;
+    height: auto;
+    width: 200px;
+    border: 1px solid #000;
+}
+
+.classdrop {
+    background: #FFFFF2;
+}
+
+.imgCarro {
+    position: absolute;
+    top: 5px;
+    right: 33%;
+    height: 50px;
+    width: 50px;
+}
+
+.msg {
+    font-size: 0.8em;
+    color: #ED890A;
+    visibility: hidden;
+}
+
+.mensage {
+    visibility: visible;
+}
+
+/*Estilo letrero con el precio*/
+#sobreimagen {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    background-color: #fff;
+    color: #f04040;
+    border: 2px solid #999;
+    padding: 7px;
+    z-index: 4;
+}
+
+#venta {
+    position: absolute;
+    -moz-transform: translateX(250px) translateY(-10px) scaleX(1.2);
+    -webkit-transform: translateX(480px) translateY(-30px) scaleX(1.2);
+}
+
+#cancel {
+    position: absolute;
+    -moz-transform: translateX(250px) translateY(-10px) scaleX(1.9);
+    -webkit-transform: translateX(480px) translateY(-7px) scaleX(1.2);
+}

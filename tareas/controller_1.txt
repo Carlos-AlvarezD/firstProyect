@@ -1,0 +1,14 @@
+06/02/2014
+Descripsion:
+Crear controlador para que realice la funcion de acumular el valor del articulo
+
+1. Quitar la funcion en la cual se calcula el valor de la compra, y reemplazarla por:
+
+Enviar datos de la compra al un controlador de php 
+el cual haga el calculo el valor de la compra.
+
+2. Recibir del controlador el valor acumulado del articulo.
+
+En la vista crear un div para mostrar el
+valor de la compra, este sera reemplazado 
+por el formulario de registro o para redireccionar para iniciar session primero.
