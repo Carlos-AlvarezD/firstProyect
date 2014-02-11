@@ -30,7 +30,7 @@ $(document).ready(function(){
                  * Recibe de la data el valor del producto, el nombre que es la 
                  * descripcion y la ruta de la imagen 
                  */
-                $(".art").append('<div class="carro" valor = "'+ productoVal +'">'+ productoDesc +' '+
+                $(".art").append('<div class="carro" productID = "'+ productoUUID +'" valor = "'+ productoVal +'">'+ productoDesc +' '+
                     '<span class = "msg">Arrastrar!!</span></br><img class = "arti" src='+
                     '"' + productoImgPath + '"' +'/></div>'
                 ); 
@@ -67,6 +67,7 @@ $(document).ready(function(){
                     nomArt = ui.draggable.text().split("Arrastrar");
                     $(this).addClass("classdrop").append(nomArt[0] + '</br>');
                     
+                    productoUUID = productVal = ui.draggable.attr('ProductID');
                     productVal = ui.draggable.attr('valor');
                     acumulador(productVal);
                 }
