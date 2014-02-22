@@ -1,4 +1,12 @@
 <?php
+
+/*
+    Autor:  Carlos Andres Alvarez
+    Fecha:  22-Feb-2014
+    Descri: Entregar informacion de usuarios y producto de la base de datos. 
+            Establece la conexion con la base de datos.
+*/ 
+
 class Usuario {
     public function Usuario() {
         $this->host = "localhost";
@@ -25,6 +33,7 @@ class Usuario {
     public function validarUsuarios($usuario, $password) {
             // recibe los datos de la variable data de jquery y los compara en la sentencia sql
         try{
+            session_start();
             $sql = "SELECT UserUUID,FirstName FROM cmuser WHERE UserName = '" . $usuario . "' and Password= '" . $password . "'";
             $res = mysql_query($sql);
 
@@ -43,6 +52,7 @@ class Usuario {
              * ademas para que javascript interprete de manera correcta el resultado
              */
             $dato[] = array("firstname" => $row ["FirstName"],"error" => FALSE); 
+            $_SESSION["userUUID"]= $row ["UserUUID"]; 
             
             /* La siguiente estructura se utiliza si el 
              * resultado en la consulta es mas de una fila a imprimir 
