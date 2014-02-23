@@ -1,53 +1,83 @@
 @charset "utf-8";
 /* CSS Document */
-body{
-    margin: 0;
-    padding: 0;
-    line-height: 1.7em;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 12px;
-    background: #FFF;
-}
 
 #contenedor {
-    width: 1200px;
-    margin: 0px auto;
-   /*-moz-transform: scaleX(1.33) scaleY(1.2) translateY(56px)
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: auto;
+    width: 960px;
+    border: 0px solid #F00;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    -moz-transform: scaleX(1.33) scaleY(1.2) translateY(56px)
             translateX(110px);
     -webkit-transform: scaleX(1.2) scaleY(1.2) translateY(56px)
-            translateX(110px);*/
+            translateX(110px);
 }
 
 #cabecera {
     position: absolute;
-    width: 1200px;
-    height: 122px;
-    background: #cdcdcd;
+    height: 15%;
+    width: 100%;
 }
 
-/*
- *  Inicia Imagen
- */
-.guitar_img {
-    width: 1200px;
+#cabecera img {
     height: 100%;
-    
+    width: 100%;
 }
 
-.guitar_img img {
-    width: 1200px;
+#pie {
+    clear: both;
+    position: absolute;
+    top: 648px;
+    bottom: auto;
+    height: 7%;
+    width: 100%;
+    display: block;
+}
+
+#pie img {
     height: 100%;
-    
+    width: 100%;
 }
-/*Finaliza Imagen*/
 
-/* 
-* Inicia Menu 
-*/
-#menu{
-    float: left;
-    width: 1200px;
+.subcontenedor {
+    position: absolute;
+    top: 138px;
+    height: 507px;
+    width: 100%;
+    border: 0px solid #0F0;
+    z-index: 1;
+}
+
+.seccion1 {
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    border: 0px solid #FF0;
+    z-index: 2;
+}
+
+.seccion2 {
+    position: absolute;
+    right: 2px;
+    height: 100%;
+    width: 34%;
+    border: 0px solid #F0F;
+}
+
+/* menu */
+
+/* Quite el body*/
+#header {
+    position: absolute;
+    top: 68px;
+    width: 100%;
+    margin: 30px 0px;
     height: 40px;
+    display: block;
     background: #333;
 }
 
@@ -62,7 +92,7 @@ ul#mainmenu li {
     bottom: 16px;
     padding: 5px 20px 15px 20px;
     position: relative;
-    line-height: 22px;
+    line-height: 18px;
 }
 
 ul#mainmenu li a {
@@ -81,9 +111,8 @@ ul#mainmenu li ul {
     border-left: solid 1px #D1D1D1;
     border-right: solid 1px #D1D1D1;
     margin: 12px 0 0 0;
-    padding: 12px 12px 0 4px;
+    padding: 12px 10px 0;
     width: 130px;
-    height: 113px;
     position: absolute;
     z-index: 3;
 }
@@ -92,10 +121,11 @@ ul#mainmenu li ul li {
     border-bottom: 1px solid #C1C1C1;
     display: block;
     float: none;
+    height: 14px;
     padding: 10px 0;
     text-align: center;
     margin: 0;
-    width: 140px;
+    width: 130px;
     background: none;
 }
 
@@ -114,52 +144,15 @@ ul#mainmenu li ul li a:hover {
 ul#mainmenu li ul li:last-child:not (li.arrow){
     border: 0;
 }
-/*Finaliza menu*/
 
-
-
-#subContenedor {
-   float: left;
-    width: 1200px;
-    height: 100%;
-}
-
-/*.seccion1 {
+#divmenu {
     position: absolute;
-    height: 100%;
-    width: 65%;
-    border: 0px solid #FF0;
-    z-index: 2;
-}
-
-.seccion2 {
-    position: absolute;
-    right: 2px;
-    height: 100%;
-    width: 34%;
-    border: 0px solid #F0F;
-}*/
-
-
-#pie {
-    clear: both;
-    position: absolute;
-    top: 648px;
-    bottom: auto;
-    height: 7%;
+    top: 150px;
+    bottom: 0px;
+    height: 10%;
     width: 100%;
-    display: block;
+    border: 1px solid #000;
 }
-
-
-#pie img {
-    height: 100%;
-    width: 100%;
-}
-
-
-
-
 /* Usuarios */
 
 /* Login y password*/
@@ -234,7 +227,7 @@ ul#mainmenu li ul li:last-child:not (li.arrow){
     top: 60px;
     right: 10%;
     padding-left: 5px;
-    height: 100px;
+    height: auto;
     width: 200px;
     border: 1px solid #000;
 }
