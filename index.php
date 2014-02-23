@@ -1,5 +1,4 @@
 <!--
-    //este es un commit de prueba
     Name:  Index.php
     Autor: Carlos Andres Alvarez Diaz
     Desc:  Index de la pagina web
@@ -16,45 +15,52 @@
 
 <div id="contenedor">
     <div id="cabecera">
-        <img src="imagenes/b1.jpg" />
-    </div>
-    <div id="header">
-        <ul id="mainmenu">
-            <li><a href="#" id="home">Home</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li class="last"><a href="#">Servicios</a>
-                <ul class="oculto">
-                    <li><a href="#" id="carroCompras">Carrito de compras</a></li>
-                    <li><a href="#" id="session">Session</a></li>
-                    <li><a href="#">Desarrollo</a></li>
-                </ul>
-            </li>
+        
+        <div class="guitar_img">
+            <img src="imagenes/b1.jpg" />
+        </div>
+        
+        <div id="menu">
+            <ul id="mainMenu">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li class="last"><a href="#">Servicios</a>
+                    <ul class="oculto">
+                        <li><a href="#" id="carroCompras">Carrito de compras</a></li>
+                        <li><a href="#" id="session">Session</a></li>
+                        <li><a href="#">Desarrollo</a></li>
+                    </ul>
+                </li>
 
-            <li id="desplegar"><a href="#">Productos</a>
-                <ul class="oculto">
-                    <li><a href="#">Plantillas</a></li>
-                    <li><a href="#">Aplicaciones</a></li>
-                    <li><a href="#">Labs</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" id="logIn">Sign In</a>
+                <li id="desplegar"><a href="#">Productos</a>
+                    <ul class="oculto">
+                        <li><a href="#">Plantillas</a></li>
+                        <li><a href="#">Aplicaciones</a></li>
+                        <li><a href="#">Labs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="logIn">Sign In</a>
+
+                </li>
+            </ul>
             
-            </li>
-        </ul>
-    </div>
-    <div class="subcontenedor">
+        </div><!--Fin menu-->
+        
+       
+        
+        <div id="subContenedor">
 
-        <div class="seccion1">
-            <div class="art"></div>
-            <div class="obtenerArticulo">
-                
+            <div class="seccion1">
+                <div class="art"></div>
+                <div class="obtenerArticulo"></div>
             </div>
-        </div>
-        <div class="seccion2">
-
-        </div>
-    </div>
+            
+            <div class="seccion2"></div>
+            
+        </div><!--Fin SubContenedor-->
+    </div><!--Fin cabecera-->
+    
     <div id="pie">
             <img src="imagenes/pie.jpg" />
     </div>
